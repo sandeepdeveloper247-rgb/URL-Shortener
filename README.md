@@ -125,17 +125,29 @@ npm start
 
 ---
 
-## 📊 Screenshots
+## 📸 Screenshots
 
-### Dashboard
+### Login
 
-(Add Screenshot Here)
+![Login](assets/login.png)
 
 ---
 
-### Analytics Page
+### Signup
 
-(Add Screenshot Here)
+![Signup](assets/signup.png)
+
+---
+
+### Dashboard
+
+![Dashboard](assets/dashboard.png)
+
+---
+
+### Analytics
+
+![Analytics](assets/analytics.png)
 
 ---
 
