@@ -290,26 +290,59 @@ td a:hover{
     color:#e5e7eb;
     font-size:15px;
 }
-.stats{
-    flex-direction:column;
-}
-@media(max-width:768px){
-.stats{
-    flex-direction:column;
-}
-    .container{
-        padding:25px;
+
+@media (max-width:768px){
+
+    body{
+        padding:20px 10px;
     }
 
-    form{
+    .container{
+        width:100%;
+        padding:20px;
+    }
+
+    .top-bar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    .subtitle{
+        font-size:15px;
+    }
+
+    .stats{
         flex-direction:column;
     }
 
-    button{
+    .card h2{
+        font-size:28px;
+    }
+
+    form:not(.logout-form){
+        flex-direction:column;
+        gap:12px;
+    }
+
+    form:not(.logout-form) input{
         width:100%;
     }
 
+    form:not(.logout-form) button{
+        width:100%;
+    }
+
+    .table-wrapper{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
     table{
+        min-width:850px;
         font-size:14px;
     }
 
@@ -318,10 +351,15 @@ td a:hover{
         padding:10px;
     }
 
-    h1{
-        font-size:32px;
+    .actions{
+        flex-direction:column;
+        gap:8px;
     }
-    
+
+    .action-btn{
+        width:100%;
+        font-size:13px;
+    }
 }
 </style>
   <meta charset="UTF-8">
