@@ -19,8 +19,8 @@ body{
 }
 
 .container{
-    width:1100px;
-    max-width:95%;
+     width:1100px;
+    max-width:100%;
     background:rgba(255,255,255,0.18);
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
@@ -121,8 +121,8 @@ h2{
 
 table{
     width:100%;
+    min-width:900px;
     border-collapse:collapse;
-    overflow:hidden;
     border-radius:15px;
     background:white;
 }
@@ -290,7 +290,11 @@ td a:hover{
     color:#e5e7eb;
     font-size:15px;
 }
-
+.table-wrapper{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+}
 @media (max-width:768px){
 
     body{
@@ -341,25 +345,23 @@ td a:hover{
         -webkit-overflow-scrolling:touch;
     }
 
-    table{
-        min-width:850px;
-        font-size:14px;
-    }
-
     th,
     td{
         padding:10px;
     }
 
     .actions{
-        flex-direction:column;
-        gap:8px;
-    }
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+}
 
-    .action-btn{
-        width:100%;
-        font-size:13px;
-    }
+.action-btn{
+    flex:1 1 45%;
+    min-width:100px;
+    font-size:13px;
+}
 }
 </style>
   <meta charset="UTF-8">
@@ -443,7 +445,7 @@ td a:hover{
     "
 >
 <h2>All Shortened URLs</h2>
-
+<div class="table-wrapper">
 <table>
   <thead>
     <tr>
@@ -540,6 +542,7 @@ td a:hover{
 
 </tbody>
 </table>
+</div>
   </div>
 
 <script>
