@@ -135,19 +135,19 @@ npm start
 
 ### Signup
 
-![Signup](assets/signup.png)
+![Signup](assets/sighnup.png)
 
 ---
 
 ### Dashboard
 
-![Dashboard](assets/dashboard.png)
+![Dashboard](assets/Dashboard.png)
 
 ---
 
 ### Analytics
 
-![Analytics](assets/analytics.png)
+![Analytics](assets/Analytics.png)
 
 ---
 
