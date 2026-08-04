@@ -14,7 +14,9 @@ const app = express();
 const PORT = process.env.PORT || 8003;
 
 connectToMongoDB(process.env.MONGO_URI)
-  .then(() => console.log("MongoDB Connected"))
+  .then(() => {console.log("MongoDB Connected");
+    app.listen(PORT, () => console.log(`Server started at PORT ${PORT}`));
+  })
   .catch((err) => console.log(err));
 
 app.set("view engine","ejs");
@@ -45,4 +47,4 @@ app.use("/url",restrictToLoggedinUserOnly, urlRoute);
 app.use("/",checkAuth,staticRoute);
 app.use("/user",userRoute);
 
-app.listen(PORT, () => console.log(`Server started at PORT ${PORT}`));
+
